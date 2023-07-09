@@ -10,6 +10,6 @@ class Main extends PluginBase{
 
     public function onEnable(): void{
         self::setInstance($this);
-        $this->getServer()->getPluginManager()->registerEvents(new EventListener);
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener, $this);
     }
 }
