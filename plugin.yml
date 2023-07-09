@@ -1,0 +1,5 @@
+name: Discord-Ingame-Chats
+version: 1.0.0
+main: DerCommander610\Incord\Main
+api: [5.0.0]
+author: DerCommander610
