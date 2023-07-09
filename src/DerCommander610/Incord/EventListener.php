@@ -14,5 +14,7 @@ class EventListener implements Listener{
         $embed = new Embed();
         $message = new Message();
         $embed->addField($event->getPlayer()->getNameTag() . " says ", $event->getMessage());
+        $message->addEmbed($embed);
+        $webhook->send($message);
     }
 }
