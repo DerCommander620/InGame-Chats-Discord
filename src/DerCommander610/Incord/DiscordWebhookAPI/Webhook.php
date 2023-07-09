@@ -30,7 +30,7 @@ namespace DerCommander610\Incord\DiscordWebhookAPI;
 
 use pocketmine\Server;
 
-use CortexPE\DiscordWebhookAPI\task\DiscordWebhookSendTask;
+use DerCommander610\Incord\DiscordWebhookAPI\task\DiscordWebhookSendTask;
 
 class Webhook{
 	
