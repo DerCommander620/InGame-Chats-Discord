@@ -13,7 +13,7 @@ class EventListener implements Listener{
         $webhook = new Webhook(Main::getInstance()->getConfig()->get("Webhook-Link"));
         $embed = new Embed();
         $message = new Message();
-        $embed->addField($event->getPlayer()->getNameTag() . " says ", $event->getMessage());
+        $embed->addField($event->getPlayer()->getName() . " says ", $event->getMessage());
         $message->addEmbed($embed);
         $webhook->send($message);
     }
